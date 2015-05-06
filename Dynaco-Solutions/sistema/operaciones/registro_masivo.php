@@ -9,9 +9,8 @@
 		}
 		
 		public function ingresar_registro($correo){
-			$columnas= strtoupper("'".$correo."'");
+			$columnas= strtolower("'".$correo."'");
 			return $this->conex->insert($this->table,$this->campos_insert,$columnas);
 		}
-
 	}
 ?>

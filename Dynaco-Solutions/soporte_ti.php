@@ -360,4 +360,5 @@ get_header(); ?>
       <div id="back-top">
         <a href="#header"><i class="fa fa-chevron-up"></i></a>
       </div>
+<script type="text/javascript">$(function(){$('[rel="tooltip"]').tooltip();$('[rel="popover"]').popover();});</script>
 <?php get_footer(); ?>

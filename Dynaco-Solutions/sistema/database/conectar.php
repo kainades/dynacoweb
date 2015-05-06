@@ -1,4 +1,4 @@
-<?php include_once 'database/datos_conexion/mysql_datos.php';
+<?php include_once 'datos_conexion/mysql_datos.php';
 class conexion{
 	private $BD_NAME;
 	private $BD_HOST;
@@ -8,7 +8,13 @@ class conexion{
 	private $TIPO;
 
 	 public function validacion(){
-		if ($_SERVER["SERVER_NAME"] == 'localhost'){
+            	/*	$this->BD_NAME		=	MYBD_NAME1;
+			$this->BD_HOST		=	MYBD_HOST1;
+			$this->BD_USUARIO	=	MYBD_USUARIO1;
+			$this->BD_PASSWORD	=	MYBD_PASSWORD1;
+			$this->DEBUG		=	MYDEPURAR1;*/
+		
+		if ($_SERVER["SERVER_NAME"] == 'dynaco-solutions.org'){
 			$this->BD_NAME		=	MYBD_NAME1;
 			$this->BD_HOST		=	MYBD_HOST1;
 			$this->BD_USUARIO	=	MYBD_USUARIO1;
@@ -22,6 +28,7 @@ class conexion{
 			$this->BD_PASSWORD	=	MYBD_PASSWORD2;
 			$this->DEBUG		=	MYDEPURAR2;
 		}
+		
 	 }
 	 
 	 protected function get_bd(){

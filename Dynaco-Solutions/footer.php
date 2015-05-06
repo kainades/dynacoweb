@@ -1,5 +1,4 @@
 <?php require_once('inc/dynaco.php');  ?> 
- 
    <aside id="footer-widgets">
     <div class="container">
         <div class="row">
